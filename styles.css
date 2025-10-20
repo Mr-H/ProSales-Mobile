@@ -61,3 +61,22 @@
 .bg-listing-3 { background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC92ji8G94TKm0HGd1LRwloY-8OG3QCxUM_QtLciPGkUKyaAXNxrkvWu3sQfevBVs_ooUcEwX5AOzta11dGoKYVM-ua1brF6WvEydsb82mXWtbG8pMvjS9FLksnzLUXxWov1ESKpWqCL3JskPBiESR4Lt8npt9UtRcj2P94BcD9i_52z3rd2kPbm20VLAg3m8sl61BHUAepx4o3dyK96Agj6yDALcxBBq19Mx1-SUbKF9dRMbs-6UUNSoaZgCiWlXkdyILvkMdDEg"); }
 .bg-listing-4 { background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDWXOMQQmjig9TQaV5w2l5folyElCQr8bFHaMOMfUEKjNyu1UtEUI4SNlssBFSr4ch-7ZdENp4re6an3FebOue4mDnHj1xzSGpAVbfQyWls5Knf2YtV6_kYUw1xO9are52Inc-mXxEli_jacw_9gBgKd4sQMbiTVqWZefrTNNsoazQtFTpISR1mf-Bq_Y--rhGW1C4mfZ9TlrrAupGFqKtSbP3RS0fSLozdl3EY5ggXN0jdPhoG3qsuO8e8TI2gVCKXT5mLqRbg3A"); }
 .bg-listing-5 { background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBDYpIO2YzGuF8BT-nIP3ZSHkoNo0OzdRREr_Ik5IjALpI75D-z0Q3J1TRLN8qiGK3WeJYA6IfCq9rAeo32ouCr4IPGrBNF1paM6Gk7uoYG7YRgFF6e6dzSQy2NPqzLjGefluVKQTRyE1RGikPR86FcPAOfdmdVWpXYbouBE8221uCiroYrOY-H-N-7YTMApkgKoTCsLPZpdf0GX6ZvQ6J_ABGdH_Lw4CI0C0xmwihltK1RmIvElAGJTEE8cikVYp0LRAs3cDV3Vw"); }
+
+/* Shared footer bar used across post-login pages */
+.footer-bar {
+    position: sticky;
+    bottom: 0;
+    background-color: rgba(246,247,248,0.8); /* fallback for bg-background-light/80 */
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(255,255,255,0.1); /* fallback for border-white/10 */
+}
+
+/* Dark-mode adjustments for the footer bar using the same single class */
+.dark .footer-bar {
+    background-color: rgba(16,28,34,0.8); /* fallback for bg-background-dark/80 */
+    border-top-color: rgba(255,255,255,0.05);
+}
+
+/* Small helpers used by some footers for inner padding/safe area */
+.pb-safe { padding-bottom: env(safe-area-inset-bottom, 12px); }
