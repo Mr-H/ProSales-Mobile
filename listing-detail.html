@@ -52,8 +52,8 @@
 </button>
 <h1 class="flex-1 text-lg font-bold text-center text-content-light dark:text-content-dark mr-8">Auction Details</h1>
 <!-- Watch toggle (eye) -->
-<button id="watchToggle" class="p-2 text-content-light dark:text-content-dark" aria-pressed="false" title="Watch this item">
-  <span id="watchIcon" class="material-symbols-outlined" aria-hidden="true">visibility</span>
+<button id="watchToggle" class="watch-toggle p-2 text-content-light dark:text-content-dark" data-listing-id="listing-1" aria-pressed="false" title="Watch this item">
+  <span class="material-symbols-outlined watch-icon" aria-hidden="true">visibility</span>
 </button>
 </div>
 </header>
@@ -117,39 +117,5 @@
 </footer>
 </div>
 </div>
-<script>
-  // Watch toggle behavior – lightweight, stores state in localStorage.
-  (function () {
-    const listingId = 'listing-1'; // assumption: no real id in markup, using a stable key
-    const key = `watched:${listingId}`;
-    const btn = document.getElementById('watchToggle');
-    const icon = document.getElementById('watchIcon');
-    if (!btn || !icon) return;
-
-    function setState(watched) {
-      btn.setAttribute('aria-pressed', watched ? 'true' : 'false');
-      btn.title = watched ? 'Unwatch this item' : 'Watch this item';
-      if (watched) {
-        icon.classList.add('filled');
-        icon.textContent = 'visibility';
-      } else {
-        icon.classList.remove('filled');
-        icon.textContent = 'visibility';
-      }
-    }
-
-    // initialize from storage
-    const stored = localStorage.getItem(key);
-    const watched = stored === '1';
-    setState(watched);
-
-    btn.addEventListener('click', () => {
-      const now = btn.getAttribute('aria-pressed') === 'true';
-      const next = !now;
-      setState(next);
-      try { localStorage.setItem(key, next ? '1' : '0'); } catch (e) { /* ignore */ }
-      // Optionally: update server via fetch/XHR here
-    });
-  })();
-</script>
+<script src="js/watch-toggle.js"></script>
 </body></html>
