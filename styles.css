@@ -80,3 +80,34 @@
 
 /* Small helpers used by some footers for inner padding/safe area */
 .pb-safe { padding-bottom: env(safe-area-inset-bottom, 12px); }
+
+/* Semantic footer navigation classes */
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.5rem;
+    color: rgba(255,255,255,0.65);
+    font-size: 0.6875rem; /* 11px */
+    text-decoration: none;
+}
+
+.footer-link svg, .footer-link .material-symbols-outlined {
+    display: block;
+}
+
+.footer-link--active {
+    color: var(--color-primary, #1193d4);
+}
+
+.footer-link--active .material-symbols-outlined.filled {
+    font-variation-settings: 'FILL' 1;
+}
