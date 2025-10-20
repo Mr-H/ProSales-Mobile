@@ -12,6 +12,10 @@ A mobile web application for auction and sales management.
 - User profiles
 - Responsive design
 
+## Mockups
+
+https://stitch.withgoogle.com/projects/8507872550235533285
+
 ## Files
 
 - `home.html` - Main landing page
