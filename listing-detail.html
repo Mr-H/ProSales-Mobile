@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Auction Details</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Work+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1193d4",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+            "content-light": "#6b7280",
+            "content-dark": "#9db0b9",
+            "surface-light": "#ffffff",
+            "surface-dark": "#1a2831",
+            "border-light": "#e5e7eb",
+            "border-dark": "#283339",
+          },
+          fontFamily: {
+            "display": ["Work Sans"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<button class="p-2 -ml-2 text-content-light dark:text-content-dark">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="flex-1 text-lg font-bold text-center text-content-light dark:text-content-dark mr-8">Auction Details</h1>
+</div>
+</header>
+<main class="flex-1">
+<div class="grid grid-cols-4 grid-rows-2 gap-0.5">
+<div class="col-span-2 row-span-2 bg-cover bg-center bg-image-1"></div>
+<div class="col-span-2 bg-cover bg-center bg-image-2"></div>
+<div class="col-span-2 bg-cover bg-center bg-image-3"></div>
+</div>
+<div class="p-6 space-y-6">
+<div>
+<h2 class="text-2xl font-bold text-content-light dark:text-content-dark">Vintage Rolex Submariner</h2>
+<p class="mt-2 text-content-light dark:text-content-dark">
+            This vintage Rolex Submariner, model 5513, dates back to 1968 and features a matte black dial, original bezel, and a stainless steel bracelet. It's a true collector's item, showcasing the timeless elegance and rugged durability that Rolex is known for.
+          </p>
+</div>
+<div>
+<h3 class="text-xl font-bold text-content-light dark:text-content-dark">Valuation</h3>
+<p class="mt-2 text-content-light dark:text-content-dark">
+            Our AI estimates the value of this Rolex Submariner between $15,000 and $20,000 based on its condition, rarity, and market trends. This valuation is a guide and the final sale price may vary.
+          </p>
+</div>
+<div>
+<h3 class="text-xl font-bold text-content-light dark:text-content-dark">Auction Status</h3>
+<div class="flex items-center justify-between mt-4">
+<div>
+<p class="text-base font-medium text-content-light dark:text-content-dark">Current Bid</p>
+<p class="text-sm text-content-light/80 dark:text-content-dark/80">Ends in 3 days</p>
+</div>
+<p class="text-lg font-bold text-content-light dark:text-content-dark">$12,500</p>
+</div>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 bg-background-light dark:bg-background-dark border-t border-border-light dark:border-border-dark">
+<div class="p-4">
+<button class="w-full h-12 px-5 text-base font-bold text-white rounded-lg bg-primary">
+                Place Bid
+            </button>
+</div>
+<div class="flex justify-around py-2 border-t border-border-light dark:border-border-dark">
+<a class="flex flex-col items-center gap-1 p-2 text-content-light dark:text-content-dark" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-content-light dark:text-content-dark" href="#">
+<span class="material-symbols-outlined">list_alt</span>
+<span class="text-xs font-medium">My Listings</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-primary" href="#">
+<span class="material-symbols-outlined">gavel</span>
+<span class="text-xs font-medium">Auctions</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-content-light dark:text-content-dark" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</div>
+<div class="h-safe-area-bottom bg-background-light dark:bg-background-dark"></div>
+</footer>
+</div>
+
+</body></html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1193d4",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+          },
+          fontFamily: {
+            "display": ["Work Sans"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div class="flex-grow">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full text-black dark:text-white" title="Go back" aria-label="Go back">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold text-black dark:text-white pr-10">My Listings</h1>
+</div>
+</header>
+<main class="p-4 space-y-3">
+<div class="flex items-center gap-4 rounded-lg bg-background-light p-3 shadow-sm dark:bg-background-dark/50">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded size-16 bg-listing-1"></div>
+<div class="flex-1">
+<p class="text-base font-medium text-black dark:text-white">Vintage Rolex Submariner</p>
+<p class="text-sm font-normal text-black/60 dark:text-white/60">Ending in 2 days</p>
+</div>
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full text-black dark:text-white">
+<span class="material-symbols-outlined">more_horiz</span>
+</button>
+</div>
+<div class="flex items-center gap-4 rounded-lg bg-background-light p-3 shadow-sm dark:bg-background-dark/50">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded size-16 bg-listing-2"></div>
+<div class="flex-1">
+<p class="text-base font-medium text-black dark:text-white">Signed Michael Jordan Jersey</p>
+<p class="text-sm font-normal text-black/60 dark:text-white/60">Ended 3 days ago</p>
+</div>
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full text-black dark:text-white">
+<span class="material-symbols-outlined">more_horiz</span>
+</button>
+</div>
+<div class="flex items-center gap-4 rounded-lg bg-background-light p-3 shadow-sm dark:bg-background-dark/50">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded size-16 bg-listing-3"></div>
+<div class="flex-1">
+<p class="text-base font-medium text-black dark:text-white">Antique Persian Rug</p>
+<p class="text-sm font-normal text-black/60 dark:text-white/60">Ended 1 week ago</p>
+</div>
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full text-black dark:text-white">
+<span class="material-symbols-outlined">more_horiz</span>
+</button>
+</div>
+<div class="flex items-center gap-4 rounded-lg bg-background-light p-3 shadow-sm dark:bg-background-dark/50">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded size-16 bg-listing-4"></div>
+<div class="flex-1">
+<p class="text-base font-medium text-black dark:text-white">First Edition Harry Potter Book</p>
+<p class="text-sm font-normal text-black/60 dark:text-white/60">Ended 2 weeks ago</p>
+</div>
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full text-black dark:text-white">
+<span class="material-symbols-outlined">more_horiz</span>
+</button>
+</div>
+<div class="flex items-center gap-4 rounded-lg bg-background-light p-3 shadow-sm dark:bg-background-dark/50">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded size-16 bg-listing-5"></div>
+<div class="flex-1">
+<p class="text-base font-medium text-black dark:text-white">Classic 1967 Ford Mustang</p>
+<p class="text-sm font-normal text-black/60 dark:text-white/60">Ended 1 month ago</p>
+</div>
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full text-black dark:text-white">
+<span class="material-symbols-outlined">more_horiz</span>
+</button>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-black/10 dark:border-white/10">
+<nav class="flex justify-around p-2">
+<a class="flex flex-col items-center justify-center gap-1 w-full p-2 rounded-lg text-black/60 dark:text-white/60 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-xs font-medium">Home</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 w-full p-2 rounded-lg bg-primary/20 dark:bg-primary/30 text-primary" href="#">
+<span class="material-symbols-outlined filled">list_alt</span>
+<p class="text-xs font-bold">My Listings</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 w-full p-2 rounded-lg text-black/60 dark:text-white/60 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">gavel</span>
+<p class="text-xs font-medium">Auctions</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 w-full p-2 rounded-lg text-black/60 dark:text-white/60 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-xs font-medium">Profile</p>
+</a>
+</nav>
+<div class="h-safe-area-inset-bottom"></div>
+</footer>
+</div>
+
+</body></html>

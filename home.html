@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1193d4",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101c22",
+            },
+            fontFamily: {
+              "display": ["Work Sans"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.25rem",
+              "lg": "0.5rem",
+              "xl": "0.75rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 bg-background-light dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center justify-between p-4">
+<div class="w-12"></div>
+<h1 class="text-lg font-bold text-gray-900 dark:text-white flex-1 text-center">Search</h1>
+<div class="flex w-12 items-center justify-end">
+<button class="p-2 text-gray-600 dark:text-gray-300" title="Notifications" aria-label="View notifications">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"></path>
+</svg>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<div class="px-4 pt-2 pb-6">
+<div class="relative">
+<div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+<svg class="h-5 w-5 text-gray-400" fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+</svg>
+</div>
+<input class="form-input w-full rounded-full border-gray-300 dark:border-gray-700 bg-background-light dark:bg-gray-800 py-3 pl-10 pr-4 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-primary focus:border-primary" placeholder="Search for items" type="search"/>
+</div>
+</div>
+<section class="px-4 pb-6">
+<h2 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Categories</h2>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 text-sm font-medium rounded-full bg-primary/10 dark:bg-primary/20 text-primary">Art</button>
+<button class="px-4 py-2 text-sm font-medium rounded-full bg-primary/10 dark:bg-primary/20 text-primary">Collectibles</button>
+<button class="px-4 py-2 text-sm font-medium rounded-full bg-primary/10 dark:bg-primary/20 text-primary">Jewelry</button>
+<button class="px-4 py-2 text-sm font-medium rounded-full bg-primary/10 dark:bg-primary/20 text-primary">Watches</button>
+<button class="px-4 py-2 text-sm font-medium rounded-full bg-primary/10 dark:bg-primary/20 text-primary">Wine</button>
+<button class="px-4 py-2 text-sm font-medium rounded-full bg-primary/10 dark:bg-primary/20 text-primary">Cars</button>
+</div>
+</section>
+<section>
+<h2 class="text-xl font-bold text-gray-900 dark:text-white px-4 mb-4">Featured Items</h2>
+<div class="flex overflow-x-auto snap-x snap-mandatory [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<div class="flex space-x-4 px-4">
+<div class="flex-shrink-0 w-64 snap-center">
+<div class="bg-cover bg-center aspect-[3/4] rounded-xl bg-home-1"></div>
+<div class="mt-2">
+<p class="font-semibold text-gray-900 dark:text-white">Modern Abstract Painting</p>
+<p class="text-sm text-gray-600 dark:text-gray-400">Starting bid: $500</p>
+</div>
+</div>
+<div class="flex-shrink-0 w-64 snap-center">
+<div class="bg-cover bg-center aspect-[3/4] rounded-xl bg-home-2"></div>
+<div class="mt-2">
+<p class="font-semibold text-gray-900 dark:text-white">Vintage Rolex Submariner</p>
+<p class="text-sm text-gray-600 dark:text-gray-400">Starting bid: $2,000</p>
+</div>
+</div>
+<div class="flex-shrink-0 w-64 snap-center">
+<div class="bg-cover bg-center aspect-[3/4] rounded-xl bg-home-3"></div>
+<div class="mt-2">
+<p class="font-semibold text-gray-900 dark:text-white">Diamond Engagement Ring</p>
+<p class="text-sm text-gray-600 dark:text-gray-400">Starting bid: $1,500</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-gray-200 dark:border-gray-800">
+<nav class="flex justify-around items-center">
+<a class="flex flex-col items-center gap-1 p-2 text-primary dark:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined filled">home</span>
+<span class="text-xs font-bold">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary/80 transition-colors" href="#">
+<span class="material-symbols-outlined">list_alt</span>
+<span class="text-xs font-medium">My Listings</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary/80 transition-colors" href="#">
+<span class="material-symbols-outlined">gavel</span>
+<span class="text-xs font-medium">Auctions</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary/80 transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

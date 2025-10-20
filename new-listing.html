@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1193d4",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+          },
+          fontFamily: {
+            "display": ["Work Sans"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div class="flex-grow">
+<header class="sticky top-0 z-10 flex items-center bg-background-light/80 px-4 py-3 backdrop-blur-sm dark:bg-background-dark/80">
+<button class="text-slate-800 dark:text-white">
+<span class="material-symbols-outlined">close</span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold text-slate-900 dark:text-white pr-6">Create Listing</h1>
+</header>
+<main class="p-4 space-y-6">
+<div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800">
+<div class="h-full w-full bg-cover bg-center bg-new-listing"></div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex h-12 items-center justify-center gap-2 rounded-lg bg-primary/20 text-primary dark:bg-primary/30">
+<span class="material-symbols-outlined">photo_camera</span>
+<span class="truncate text-sm font-semibold">Take Photo</span>
+</button>
+<button class="flex h-12 items-center justify-center gap-2 rounded-lg bg-primary/20 text-primary dark:bg-primary/30">
+<span class="material-symbols-outlined">upload</span>
+<span class="truncate text-sm font-semibold">Upload</span>
+</button>
+</div>
+<div class="space-y-4">
+<label class="text-base font-semibold text-slate-900 dark:text-white" for="description">Description</label>
+<textarea class="form-textarea w-full resize-none rounded-lg border-none bg-slate-200 p-4 text-base text-slate-800 placeholder:text-slate-500 focus:ring-2 focus:ring-primary dark:bg-slate-800 dark:text-white dark:placeholder:text-slate-400" id="description" placeholder="Describe your item" rows="4"></textarea>
+<button class="flex h-12 w-full items-center justify-center gap-2 rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined">auto_awesome</span>
+<span class="truncate text-sm font-semibold">Generate Description</span>
+</button>
+</div>
+<div class="space-y-4">
+<label class="text-base font-semibold text-slate-900 dark:text-white" for="valuation">Valuation</label>
+<div class="relative">
+<span class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 text-slate-500 dark:text-slate-400">$</span>
+<input class="form-input w-full rounded-lg border-none bg-slate-200 py-3 pl-8 pr-4 text-base text-slate-800 placeholder:text-slate-500 focus:ring-2 focus:ring-primary dark:bg-slate-800 dark:text-white dark:placeholder:text-slate-400" id="valuation" placeholder="0.00"/>
+</div>
+<button class="flex h-12 w-full items-center justify-center gap-2 rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined">auto_awesome</span>
+<span class="truncate text-sm font-semibold">Generate Valuation</span>
+</button>
+</div>
+<div class="flex items-center justify-between rounded-lg bg-slate-200 p-4 dark:bg-slate-800">
+<p class="font-medium text-slate-900 dark:text-white">For Sale</p>
+<label class="relative inline-flex h-8 w-14 cursor-pointer items-center">
+<input class="peer sr-only" type="checkbox" aria-label="Toggle for sale status"/>
+<div class="h-6 w-11 rounded-full bg-slate-300 after:absolute after:left-1 after:top-1 after:h-4 after:w-4 after:rounded-full after:bg-white after:transition-all peer-checked:bg-primary peer-checked:after:translate-x-full dark:bg-slate-700"></div>
+</label>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 border-t border-slate-200 bg-background-light/90 pb-3 pt-2 backdrop-blur-sm dark:border-slate-800 dark:bg-background-dark/90">
+<nav class="flex justify-around">
+<a class="flex flex-col items-center justify-end gap-1 text-primary" href="#">
+<span class="material-symbols-outlined filled">home</span>
+<p class="text-xs font-medium">Home</p>
+</a>
+<a class="flex flex-col items-center justify-end gap-1 text-slate-500 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined">list_alt</span>
+<p class="text-xs font-medium">My Listings</p>
+</a>
+<a class="flex flex-col items-center justify-end gap-1 text-slate-500 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined">gavel</span>
+<p class="text-xs font-medium">Auctions</p>
+</a>
+<a class="flex flex-col items-center justify-end gap-1 text-slate-500 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-xs font-medium">Profile</p>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

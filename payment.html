@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1193d4",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101c22",
+            },
+            fontFamily: {
+              "display": ["Work Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<title>Payment Methods - ProSales</title>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between">
+<div class="flex-grow">
+<header class="flex items-center p-4">
+<button class="text-slate-800 dark:text-white p-2 -ml-2" title="Go back" aria-label="Go back to previous page">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold text-slate-900 dark:text-white pr-8">Payment Methods</h1>
+</header>
+<main class="p-4 space-y-4">
+<h2 class="text-sm font-semibold text-slate-500 dark:text-slate-400">SAVED PAYMENT METHODS</h2>
+<div class="space-y-2">
+<div class="flex items-center justify-between rounded-lg bg-white dark:bg-slate-800/50 p-4 hover:bg-slate-50 dark:hover:bg-slate-800/70 transition-colors">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-video bg-contain h-6 w-10 shrink-0 bg-payment-card"></div>
+<div class="flex flex-col">
+<p class="text-base font-medium text-slate-900 dark:text-white">Visa ending in 4567</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Expires 03/2025</p>
+</div>
+</div>
+        <div class="flex items-center gap-2">
+<span class="text-xs font-semibold text-primary">DEFAULT</span>
+<button class="text-slate-500 dark:text-slate-400" title="Card options" aria-label="Card options menu">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M141.66,128a13.66,13.66,0,0,1-13.66,13.66A13.65,13.65,0,0,1,114.34,128a13.65,13.65,0,0,1,13.66-13.65A13.66,13.66,0,0,1,141.66,128ZM61.66,128a13.66,13.66,0,0,1-13.66,13.66A13.65,13.65,0,0,1,34.34,128,13.65,13.65,0,0,1,48,114.35,13.66,13.66,0,0,1,61.66,128Zm156,0a13.66,13.66,0,0,1-13.66,13.66A13.65,13.65,0,0,1,190.34,128a13.65,13.65,0,0,1,13.66-13.65A13.66,13.66,0,0,1,217.66,128Z"></path></svg>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between rounded-lg bg-white dark:bg-slate-800/50 p-4 hover:bg-slate-50 dark:hover:bg-slate-800/70 transition-colors">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-video bg-contain h-6 w-10 shrink-0 bg-payment-card"></div>
+<div class="flex flex-col">
+<p class="text-base font-medium text-slate-900 dark:text-white">Mastercard ending in 1234</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Expires 01/2024</p>
+</div>
+</div>
+<button class="text-slate-500 dark:text-slate-400" title="Card options" aria-label="Mastercard options menu">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M141.66,128a13.66,13.66,0,0,1-13.66,13.66A13.65,13.65,0,0,1,114.34,128a13.65,13.65,0,0,1,13.66-13.65A13.66,13.66,0,0,1,141.66,128ZM61.66,128a13.66,13.66,0,0,1-13.66,13.66A13.65,13.65,0,0,1,34.34,128,13.65,13.65,0,0,1,48,114.35,13.66,13.66,0,0,1,61.66,128Zm156,0a13.66,13.66,0,0,1-13.66,13.66A13.65,13.65,0,0,1,190.34,128a13.65,13.65,0,0,1,13.66-13.65A13.66,13.66,0,0,1,217.66,128Z"></path></svg>
+</button>
+</div>
+<div class="flex items-center justify-between rounded-lg bg-white dark:bg-slate-800/50 p-4 hover:bg-slate-50 dark:hover:bg-slate-800/70 transition-colors">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-video bg-contain h-6 w-10 shrink-0 bg-payment-card"></div>
+        <p class="text-base font-medium text-slate-900 dark:text-white">PayPal</p>
+</div>
+<button class="text-slate-500 dark:text-slate-400" title="Payment method options" aria-label="PayPal options menu">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M141.66,128a13.66,13.66,0,0,1-13.66,13.66A13.65,13.65,0,0,1,114.34,128a13.65,13.65,0,0,1,13.66-13.65A13.66,13.66,0,0,1,141.66,128ZM61.66,128a13.66,13.66,0,0,1-13.66,13.66A13.65,13.65,0,0,1,34.34,128,13.65,13.65,0,0,1,48,114.35,13.66,13.66,0,0,1,61.66,128Zm156,0a13.66,13.66,0,0,1-13.66,13.66A13.65,13.65,0,0,1,190.34,128a13.65,13.65,0,0,1,13.66-13.65A13.66,13.66,0,0,1,217.66,128Z"></path></svg>
+</button>
+</div>
+</div>
+<button class="w-full flex items-center gap-4 rounded-lg bg-white dark:bg-slate-800/50 p-4 text-left hover:bg-slate-50 dark:hover:bg-slate-800/70 transition-colors">
+<div class="flex items-center justify-center rounded-lg bg-primary/10 dark:bg-primary/20 shrink-0 size-10">
+<svg class="text-primary" fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
+</svg>
+</div>
+<p class="flex-1 text-base font-medium text-slate-900 dark:text-white">Add Payment Method</p>
+<svg class="text-slate-400 dark:text-slate-500" fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+</svg>
+</button>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-slate-200 dark:border-slate-800">
+<nav class="flex justify-around p-2">
+<a class="flex flex-col items-center justify-center gap-1 text-slate-500 dark:text-slate-400 w-1/4 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-slate-500 dark:text-slate-400 w-1/4 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">list_alt</span>
+<span class="text-xs font-medium">My Listings</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-slate-500 dark:text-slate-400 w-1/4 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">gavel</span>
+<span class="text-xs font-medium">Auctions</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-primary w-1/4 rounded-full bg-primary/10 dark:bg-primary/20 py-2" href="#">
+<span class="material-symbols-outlined filled">person</span>
+<span class="text-xs font-bold">Profile</span>
+</a>
+</nav>
+<div class="pb-3"></div>
+</footer>
+</div>
+
+</body></html>

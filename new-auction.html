@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1193d4",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101c22",
+            },
+            fontFamily: {
+              display: ["Work Sans"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+<style>
+      .form-checkbox:checked {
+        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex h-screen flex-col">
+<header class="flex items-center p-4">
+<button class="text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined text-3xl"> close </span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold text-gray-900 dark:text-white pr-8">Create Event</h1>
+</header>
+<main class="flex-1 overflow-y-auto px-4 pb-24">
+<form class="space-y-4">
+<div>
+<label class="sr-only" for="event-name">Event Name</label>
+<input class="w-full rounded-lg border-none bg-white/10 dark:bg-black/20 py-4 px-4 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-primary" id="event-name" placeholder="Event Name" type="text"/>
+</div>
+<div>
+<label class="sr-only" for="date">Date</label>
+<input class="w-full rounded-lg border-none bg-white/10 dark:bg-black/20 py-4 px-4 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-primary" id="date" placeholder="Date" type="text"/>
+</div>
+<div>
+<label class="sr-only" for="time">Time</label>
+<input class="w-full rounded-lg border-none bg-white/10 dark:bg-black/20 py-4 px-4 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-primary" id="time" placeholder="Time" type="text"/>
+</div>
+</form>
+<h2 class="mt-8 mb-4 text-xl font-bold text-gray-900 dark:text-white">Add Listings</h2>
+<div class="space-y-3">
+<label class="flex items-center justify-between rounded-lg bg-white/5 dark:bg-black/10 p-3 cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="h-14 w-14 flex-shrink-0 rounded-lg bg-cover bg-center bg-new-auction-1"></div>
+<div>
+<p class="font-semibold text-gray-900 dark:text-white">Rolex Submariner</p>
+<p class="text-sm text-gray-600 dark:text-gray-400">Vintage Rolex Submariner</p>
+</div>
+</div>
+<input class="form-checkbox h-6 w-6 shrink-0 cursor-pointer rounded border-2 border-gray-400 dark:border-gray-600 bg-transparent text-primary focus:ring-primary focus:ring-offset-0" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between rounded-lg bg-white/5 dark:bg-black/10 p-3 cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="h-14 w-14 flex-shrink-0 rounded-lg bg-cover bg-center bg-new-auction-2"></div>
+<div>
+<p class="font-semibold text-gray-900 dark:text-white">Art Print</p>
+<p class="text-sm text-gray-600 dark:text-gray-400">Limited Edition Art Print</p>
+</div>
+</div>
+<input class="form-checkbox h-6 w-6 shrink-0 cursor-pointer rounded border-2 border-gray-400 dark:border-gray-600 bg-transparent text-primary focus:ring-primary focus:ring-offset-0" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between rounded-lg bg-white/5 dark:bg-black/10 p-3 cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="h-14 w-14 flex-shrink-0 rounded-lg bg-cover bg-center bg-new-auction-3"></div>
+<div>
+<p class="font-semibold text-gray-900 dark:text-white">Baseball</p>
+<p class="text-sm text-gray-600 dark:text-gray-400">Signed Baseball</p>
+</div>
+</div>
+<input class="form-checkbox h-6 w-6 shrink-0 cursor-pointer rounded border-2 border-gray-400 dark:border-gray-600 bg-transparent text-primary focus:ring-primary focus:ring-offset-0" type="checkbox"/>
+</label>
+</div>
+</main>
+<footer class="fixed bottom-0 left-0 w-full bg-background-light dark:bg-background-dark p-4 pb-6">
+<button class="w-full rounded-xl bg-primary py-4 text-center font-bold text-white shadow-lg transition-transform active:scale-95">
+          Create Event
+        </button>
+</footer>
+</div>
+
+</body></html>
