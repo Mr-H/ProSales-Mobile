@@ -1,107 +1,63 @@
-/* Inline styles moved to external CSS file */
-
-/* Listing detail images */
-.bg-image-1 {
-    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBqgLfexNLegZyL1LWFAfN3LbyfP_U_m8bWtT_LrX6FJjcqWuYh8ntBmuQ7hylAt1b021ajEvLKTNHFVWUTHBJUu6OUWQ6SzjVN-YIuDvtvLwY297pR6Cit2oP2Esa6Q8C2JpxNswQc4Mc6qvscO6twixvt0kbYHFbrs3cXb6MDgno87h568lMFFG6oPLT62YolPd3zOov5BGEsxhKOSS68uWDlmI9UXWI8TKDqUV40ND4OU-NrEh5gfAZ8pXCnuLMTg2hIBmjLoQ");
-}
-
-.bg-image-2 {
-    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBkFofGsaHydaw5EK52GJU0_xUsv4XmGFXfDTQ72o6-SdFe4a4Ig2OXRvxJX5RnY3ICgS2QqPhCoA3m0PVctDUFWBCoAWwpZ4hIWEPUKv1_18V2edX80NLlHmYQdJjqOCtpUh7R2V3SQcgBnh5kPturgBM1bOSUM_gG_S9az7z1ckY0e50xJ84hh8biQnH62mXVt2HUFEVjb7U6AkFl6iDDXaMj_H_8UjmY11b5D1aecojF9b1ZW1cOYqJ7F6n-tGrsxuxbOgPs_A");
-}
-
-.bg-image-3 {
-    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDAoGbv_bJmM3A5ag5ZXG4UyGRDjpREm3KFmMMEVgusLVav3BP7EHgH9sn1jggFsGHzkMKZrbuMadUhexbFmfVSl50HERUSUjpivL_kmzJpEWBJWE_zkUlDg_qmqEApqbA6N5UYLxxa7GZv5I2OVGFuBFykF0qGdS1KPjdmXROoz64IraH-xD3akMA2wt9H_tagfsasLcC0zX1HgvQOKFINajS6CRHmT4Osnb2R3vepW5UWIqcroL8FwtKa85R3OTT_2ZpStrK_uQ");
-}
-
-/* New listing image */
-.bg-new-listing {
-    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDx7ZV1aHjFiyTGoTLFogAEcrQ6pJ20U6dh383IRBpii6BKAzn7QQM_L1xE07QtjmwWyzOIBs-M5Lwkwepcb6K-lxht1_a5EV0M-D3fa54k5OZiJU_CDqHoJboTXYckSYzsZV9w5eih0nXA3qRpXJhH4tPKDakBVwbhPT3cvgKLGR8LFJb2m62sGo6rI7gc-iXBtmLGf2xl-t4xKoJdmvUddc5ow38Avq9PdCKX4KYlxng9hdWn7cZ3wT3TiLANuNJ4qcaM4pAbtg");
-}
+/* Consolidated background-image utilities
+   - Shared background behavior is declared once so individual classes
+     only supply the URL. This reduces duplication and makes it easier
+     to reuse background styles across pages. */
 
 /* Material icons filled */
 .material-symbols-outlined.filled {
     font-variation-settings: 'FILL' 1;
 }
 
-/* Home page listing images */
-.bg-home-1 {
-    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBxsrTSvJB1kK-kl5ZmISF8qqcPzVRqos8N-kz1mOyRBOzlq5Z-0HPo5X7f7Sw2_ztmprubQG9QnmhOK8_PWNSILbw8ToLO4ubEgRBgBF2RpgqYOeZ0qL3spV5wAOd_obKPH1TP6xZZm1Et0gCO4MaOBfPv7FTEygCbgKN4_Kpo3j9jNCUh5nOYN4mm7JmhxtKqWqCSE2YfJSR7NlaR8-Z_EK0Uy41k59-4YSPtElXN2e5nRCqPzxcHOmBUIrQPEWO6eAkCQrCQeQ');
+/* Shared rules for cover-style images used across the site */
+.bg-image-1, .bg-image-2, .bg-image-3,
+.bg-new-listing,
+.bg-home-1, .bg-home-2, .bg-home-3,
+.bg-auction-1, .bg-auction-2, .bg-auction-3, .bg-auction-4,
+.bg-new-auction-1, .bg-new-auction-2, .bg-new-auction-3,
+.bg-bid-main, .bg-bid-next,
+.bg-profile-avatar,
+.bg-listing-1, .bg-listing-2, .bg-listing-3, .bg-listing-4, .bg-listing-5 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.bg-home-2 {
-    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCoOa2ivT4mfOXCBRGo2FA61YxcOTMBbFuMT8Xwo2wr-x-zYfJjHaa0t_ka397cV4lLBgO6L1GqJzsd-CCGBhmvSwD9y3o7NpC-Sh4lVsydFU4O-77jlDKD-A24IJiLIgNVqCsgSCEgP4NYJmuznh6VpCepMTVCn35eIFqrErnbfh3Mbxfr4_i8p3I9FCoSF9PJlPHoXzfMLo6v2p0-52BqLgfZZAu_uguaez31FK5n3dXoW6HBQjYPi6Zn0ZS5qk8Khj5X4TJQ2A');
-}
-
-.bg-home-3 {
-    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBsscZYHa3A_a-kpFVw2zP3zNG9jKv77yyyz-JczkgDTELA9i2mT9QYFKbkNOGjf0gZCWF19BvzVnGuwoipA2vhTjJBlWcct9rZf5JHaJYiKVzpey_FkFbgmgEH5HHFwte-sAvhVXErtW-miH_KGHVIPkURCAxVhJPCgyJV2hwX0cnwMr9mKvCPcVsExqZ0YuO7cyC4UeQJfhH7alKvSeeW8zW2VQdLxFT6XRd5sMfKL60IdP2aHaJbIRgqXYqSOycL5SmfI2X9bg');
-}
-
-/* Auction page listing images */
-.bg-auction-1 {
-    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB-cYcEKEHXKGp_bZbvTfP6NDH3J6BUJiH8oBfpas2CRguGtB9s4oeTIGX2HLJPn1DNITLP0r2lP9iZlbq0VJJhYfaNrESDwOGPjHCZBXQGZCsXmliKCgY2amHdy3uhyqaepL1MRUhFwwqZPQrqy8C7QfxZ9z2TzD6z6mK6FQAUIUr0LL2vvzoMyD5Ll0wTX7KEz03O0KlBE_9V3CG2qPxh1Q2PGcCTq-KPKcF9pQ_l6qY4mTB2FHKXF7DCYR27UCtqTlYLPGBuLQ');
-}
-
-.bg-auction-2 {
-    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAVyhI_qo9kxvKvAc-Ju0XWGk0T0hJG_QVV1Pnq_72E1NTYKnw7uVbK1g8K8-jkfgPgwlB_lE2Xc1zXrHSdY9ocZvl9JUpJWkA9Xf4aS1MefKHRGjX1kGYF-C5Q7uqtF-_15cb9LJM2vHYdcOOXR0YTqNImZOCz0VwJjeBfRh4hACz8vQhMEeYv2izFMMIruW9tl8-CBrtP5VUxdJR4oEqglReQ5I22KE-8OzZ26PfEBcEkAGLpSzaYiCQW5QwBqY1gHj7GJyRg8w');
-}
-
-.bg-auction-3 {
-    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBuioF5-J274vK47pwxfjkirDZW6P9SzNfW9jxisGW_GSWj34O4mH7FZf_4U-7NZd1KhE3E8oFHUbcBVW5S5HVsqEp1cMbPKOvYxf1d9XP-Eh1_QLhd5pwyzR4LFiD9Hq7OGW9Q2SWb9wWT6ot-KZCb1Rn2f37WpQGEjEyJPh5SASOA2iZGk9HcOEvVFIOh0aFnT9yxhCYLf2pKdAKDBhElWQZf9SQbY-3w8oXqYmPItrt_i41gs1ICPeGKqbOvMXcGzqGDJVeKRA');
-}
-
-.bg-auction-4 {
-    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAP9RPdcyaGwJZHrCyfWyjJ7L4hpkHXFfsIfXMtk5t_UqQTU4Uf6VQEwHsEsF5b-CfcqJLJ7PKC1a-jgijxusDlP0rOvwoDU9ck6Q3XLGhU4-P3IXMG9v0FYJ4A_kOhQeO2JY9VjlE_TJZpZ7cHi4vsKzUcd6X4_fL7BQQwHKLYBqoddJdPryJpcEieSNcHInnH98BKe8oieGo5xGb8JKtruxnTTkAv7bhXfW3TGfzYqHCFuJZZXXvs1lyByO_-21Ac8vZI5YCpBg');
-}
-
-/* New auction listing images */
-.bg-new-auction-1 {
-    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCDegAYr_NTxg8JTREM2OJluzgwjZjApFS5yjipLyyJGDqhPEHcEb4thHNiyX-u2FATxBFu7bFdeBU4hoZ2lE6PILyT_CwKZFzO8QE8C-k1gT6SM1OaTEo7w0GU_rfphg7GqNvr_JpNCHkmHc1o0w8VbTKPoyWWAtEXbh0Ts7Df7WKBmYgEwmhH7WqEJQl1_O6ZpDMq9S2yOlBYR0-wQpqLVCayVQGH9n8JMNyHe-LyvfYl0lbIBd9RNTn8xR1GXeDjRj4rW3qFiQ');
-}
-
-.bg-new-auction-2 {
-    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBe56mY2yieL4Kc7-tfMKpaVXGyuP952nkcIBXiyyw2n8PUz9IYxcVIGnoQW9SxlQQ8I7MqrfGzlC_Mn35Onh2J8HIiD2qEAb_XGf8LdqGhPKFGpM9hpXejGxNWPW5mbRxtgDfQGUcDsAoJlqhLfGzDjKheTPRtp9U94_xVhN3p0IGlyhueWxKRa1qdNJH2prGF3RgNbfKvXv7WGZ3-pfVgANEqtJyVhFtqPAk5agOJaFXJ4QTpUV4Tc7UyQR2Erd_wIDhKJ1hX9g');
-}
-
-.bg-new-auction-3 {
-    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCOJfv9myDjCUTrjmQBWcf3369mAUNm9Y6Dm0lmWlci-xU3Mxvh1zNhKJH6FGPJvotwCqhd_ngY1PRpyJP7C1KF1WwG8LJcjGO9vhkf0dB4oe-oQ9-_zJl8QG5xYRu4hT3IZp2ZP1ppDlhm2TNfz8YU3TsIzp3FWLgPKpbtepA1Id2jg4JlKhkYzd6EOGPBbO9p2vKGOhPOzjd0hg0QD2Y6CHsiKFROitxhwbUF2cFVJwXzBlXjQP1HSKAhvXKp-Qg8pO6VbipCdQ');
-}
-
-/* Bid page images */
-.bg-bid-main {
-    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAJfankX1u5YYk1d7pZbsxv8KmCY7ZZjRtQL22MQkqmSh-jR3JJDMYZZMAROUbhIkqtDgWDiQnAnsutfeFu8nW4d99w4RtGrkNrhEkNuAggLBwtorpcOrWndvwIpDuiZuV4NOCJ7EhnEN_zWlFy2V0DSlPUiFa_fn_K94zV5GkwZXUJiHsrttqvxsNkCVqK6dbRqHuhppRbMaXTG-qTyUkdYOwaP_S1HzlAz3KcguWyK0pxk6wwu_zznFxEWWz9OgWpNPnyB-Hc5w");
-}
-
-.bg-bid-next {
-    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuClBqGo7yn0m88kZU-taO2X6qTIH9L6ZqTBqn-qXVN774PaI0Z1BHfPD4vwUYv9_Afudoadwdpu0mfJ_cprJ9WtxNbV0UQj9hYo-2jIl6YD7IwRgP14hcJfIwzIeKzxYVxMnDrPW0L2P-BIUyI6GAkThOd4QmZPENzEaVNmJYbvTWKsCE9_xGOceq0qBjNdN06VzPzJsKtPwbebTKNYrfeTSNgnhGAI4YwkJfeCBR7ygKX-S7VaoZw6MgmNrU82LHN083b5LsRagg");
-}
-
-/* Payment page card logos */
+/* Logos and icons that need to fit inside a box */
 .bg-payment-card {
-    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCjhfXPtxmOoBtJkAU3YVx5awn1mf0VIl4u84CIWeSB9AVA0vKwH_WLmfHggDWW0PcKf_fO8ckDIgxoXZtzi_UNb2QO7ep7UjpNU5yBTR6osjEagH14dj7kSC3dOG0YA38sdbxjaXkl49dRG2y1wiwDufIFNqc6dyo__nxe2IOiQs2iak5peFiXdkO7vse0xehOmIRd2D8QHIx7D2Co2UmZVfOw-VCxUSsakkHhfig99nbbEkETsRNTKkdR8TcEe_aUr9uEsLj9lw");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-/* Profile page profile image */
-.bg-profile-avatar {
-    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAGRjpc1fv949IXER1k4sJi66PxDme0Mm0pnJaijm-pOh7DjbUUdZzTuHyLLss3B6j9iDw1QhmCgVIzg-_uha2azHJAuuj0vDxwkRm-OvJ-_dBsT3piUo8H3GiWEWEF6-bwDqKW6HkaCcuXm9H4JKABHu9Z-vokAQs7koDlM1TcLrLkpJgBkpNIsWAxCa3hgMNHpastjGTHvj4jwr9VM2inzcZsv50u06ImagXTYjYnYfl9VhcK6Jzw9XJxTDMfxt8x28gXGIbdZA");
-}
+/* Per-image URL declarations (only the URL is specific) */
+.bg-image-1 { background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBqgLfexNLegZyL1LWFAfN3LbyfP_U_m8bWtT_LrX6FJjcqWuYh8ntBmuQ7hylAt1b021ajEvLKTNHFVWUTHBJUu6OUWQ6SzjVN-YIuDvtvLwY297pR6Cit2oP2Esa6Q8C2JpxNswQc4Mc6qvscO6twixvt0kbYHFbrs3cXb6MDgno87h568lMFFG6oPLT62YolPd3zOov5BGEsxhKOSS68uWDlmI9UXWI8TKDqUV40ND4OU-NrEh5gfAZ8pXCnuLMTg2hIBmjLoQ"); }
+.bg-image-2 { background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBkFofGsaHydaw5EK52GJU0_xUsv4XmGFXfDTQ72o6-SdFe4a4Ig2OXRvxJX5RnY3ICgS2QqPhCoA3m0PVctDUFWBCoAWwpZ4hIWEPUKv1_18V2edX80NLlHmYQdJjqOCtpUh7R2V3SQcgBnh5kPturgBM1bOSUM_gG_S9az7z1ckY0e50xJ84hh8biQnH62mXVt2HUFEVjb7U6AkFl6iDDXaMj_H_8UjmY11b5D1aecojF9b1ZW1cOYqJ7F6n-tGrsxuxbOgPs_A"); }
+.bg-image-3 { background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDAoGbv_bJmM3A5ag5ZXG4UyGRDjpREm3KFmMMEVgusLVav3BP7EHgH9sn1jggFsGHzkMKZrbuMadUhexbFmfVSl50HERUSUjpivL_kmzJpEWBJWE_zkUlDg_qmqEApqbA6N5UYLxxa7GZv5I2OVGFuBFykF0qGdS1KPjdmXROoz64IraH-xD3akMA2wt9H_tagfsasLcC0zX1HgvQOKFINajS6CRHmT4Osnb2R3vepW5UWIqcroL8FwtKa85R3OTT_2ZpStrK_uQ"); }
 
-/* Listings page thumbnail images */
-.bg-listing-1 {
-    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAHY6gS-RwoB1-2mfc0eZbOpvWqPHzxaVeDpPXGgnkzxkDXoDsXClIFMr5JQXcpG411gBnIFeAckrFaMzwX3rF0cDG8kdwx0UH22gvB3tNJSBjacFs_r_qfqczzyZj4v0EwwgfvBfLlRt-qP8XE4xvdotWXRSn1i9EahH4F0X0K_tWZxn4wQOfIqZd_FF2bGD1-QyWITQXLqhvxm5SHT5YyWdEtlhN7R3umkk2KYVAr0M2nydviIGoFCuT6P0Sn5oLw5-EO1uzpQg");
-}
+.bg-new-listing { background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDx7ZV1aHjFiyTGoTLFogAEcrQ6pJ20U6dh383IRBpii6BKAzn7QQM_L1xE07QtjmwWyzOIBs-M5Lwkwepcb6K-lxht1_a5EV0M-D3fa54k5OZiJU_CDqHoJboTXYckSYzsZV9w5eih0nXA3qRpXJhH4tPKDakBVwbhPT3cvgKLGR8LFJb2m62sGo6rI7gc-iXBtmLGf2xl-t4xKoJdmvUddc5ow38Avq9PdCKX4KYlxng9hdWn7cZ3wT3TiLANuNJ4qcaM4pAbtg"); }
 
-.bg-listing-2 {
-    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB2uXt-7CFewbsoD8cfMwj5vD1tD-lGESxTqENOlimjE-vyjsfPW_sh_ygJC57tju1PpktdJxZPEV6Cew9UMVj_bV8iIQrWI5ZHxRH6gUIOwDf-ioCcPQwpJGyJotrFwcHcwbdYqrMtnMRqnYQVlxYMHg5Ds3rg9CPpFPa97ZOACD3niGAqMVzglfvDbwoLZwYvVAy0hMdNRP_ddq-TtpVp0tygFWdOdpONX5lPiO_zEZg5sKxJD18FFxToqrbY19RfXSyF-iZTbA");
-}
+.bg-home-1 { background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBxsrTSvJB1kK-kl5ZmISF8qqcPzVRqos8N-kz1mOyRBOzlq5Z-0HPo5X7f7Sw2_ztmprubQG9QnmhOK8_PWNSILbw8ToLO4ubEgRBgBF2RpgqYOeZ0qL3spV5wAOd_obKPH1TP6xZZm1Et0gCO4MaOBfPv7FTEygCbgKN4_Kpo3j9jNCUh5nOYN4mm7JmhxtKqWqCSE2YfJSR7NlaR8-Z_EK0Uy41k59-4YSPtElXN2e5nRCqPzxcHOmBUIrQPEWO6eAkCQrCQeQ'); }
+.bg-home-2 { background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCoOa2ivT4mfOXCBRGo2FA61YxcOTMBbFuMT8Xwo2wr-x-zYfJjHaa0t_ka397cV4lLBgO6L1GqJzsd-CCGBhmvSwD9y3o7NpC-Sh4lVsydFU4O-77jlDKD-A24IJiLIgNVqCsgSCEgP4NYJmuznh6VpCepMTVCn35eIFqrErnbfh3Mbxfr4_i8p3I9FCoSF9PJlPHoXzfMLo6v2p0-52BqLgfZZAu_uguaez31FK5n3dXoW6HBQjYPi6Zn0ZS5qk8Khj5X4TJQ2A'); }
+.bg-home-3 { background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBsscZYHa3A_a-kpFVw2zP3zNG9jKv77yyyz-JczkgDTELA9i2mT9QYFKbkNOGjf0gZCWF19BvzVnGuwoipA2vhTjJBlWcct9rZf5JHaJYiKVzpey_FkFbgmgEH5HHFwte-sAvhVXErtW-miH_KGHVIPkURCAxVhJPCgyJV2hwX0cnwMr9mKvCPcVsExqZ0YuO7cyC4UeQJfhH7alKvSeeW8zW2VQdLxFT6XRd5sMfKL60IdP2aHaJbIRgqXYqSOycL5SmfI2X9bg'); }
 
-.bg-listing-3 {
-    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC92ji8G94TKm0HGd1LRwloY-8OG3QCxUM_QtLciPGkUKyaAXNxrkvWu3sQfevBVs_ooUcEwX5AOzta11dGoKYVM-ua1brF6WvEydsb82mXWtbG8pMvjS9FLksnzLUXxWov1ESKpWqCL3JskPBiESR4Lt8npt9UtRcj2P94BcD9i_52z3rd2kPbm20VLAg3m8sl61BHUAepx4o3dyK96Agj6yDALcxBBq19Mx1-SUbKF9dRMbs-6UUNSoaZgCiWlXkdyILvkMdDEg");
-}
+.bg-auction-1 { background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB-cYcEKEHXKGp_bZbvTfP6NDH3J6BUJiH8oBfpas2CRguGtB9s4oeTIGX2HLJPn1DNITLP0r2lP9iZlbq0VJJhYfaNrESDwOGPjHCZBXQGZCsXmliKCgY2amHdy3uhyqaepL1MRUhFwwqZPQrqy8C7QfxZ9z2TzD6z6mK6FQAUIUr0LL2vvzoMyD5Ll0wTX7KEz03O0KlBE_9V3CG2qPxh1Q2PGcCTq-KPKcF9pQ_l6qY4mTB2FHKXF7DCYR27UCtqTlYLPGBuLQ'); }
+.bg-auction-2 { background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAVyhI_qo9kxvKvAc-Ju0XWGk0T0hJG_QVV1Pnq_72E1NTYKnw7uVbK1g8K8-jkfgPgwlB_lE2Xc1zXrHSdY9ocZvl9JUpJWkA9Xf4aS1MefKHRGjX1kGYF-C5Q7uqtF-_15cb9LJM2vHYdcOOXR0YTqNImZOCz0VwJjeBfRh4hACz8vQhMEeYv2izFMMIruW9tl8-CBrtP5VUxdJR4oEqglReQ5I22KE-8OzZ26PfEBcEkAGLpSzaYiCQW5QwBqY1gHj7GJyRg8w'); }
+.bg-auction-3 { background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBuioF5-J274vK47pwxfjkirDZW6P9SzNfW9jxisGW_GSWj34O4mH7FZf_4U-7NZd1KhE3E8oFHUbcBVW5S5HVsqEp1cMbPKOvYxf1d9XP-Eh1_QLhd5pwyzR4LFiD9Hq7OGW9Q2SWb9wWT6ot-KZCb1Rn2f37WpQGEjEyJPh5SASOA2iZGk9HcOEvVFIOh0aFnT9yxhCYLf2pKdAKDBhElWQZf9SQbY-3w8oXqYmPItrt_i41gs1ICPeGKqbOvMXcGzqGDJVeKRA'); }
+.bg-auction-4 { background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAP9RPdcyaGwJZHrCyfWyjJ7L4hpkHXFfsIfXMtk5t_UqQTU4Uf6VQEwHsEsF5b-CfcqJLJ7PKC1a-jgijxusDlP0rOvwoDU9ck6Q3XLGhU4-P3IXMG9v0FYJ4A_kOhQeO2JY9VjlE_TJZpZ7cHi4vsKzUcd6X4_fL7BQQwHKLYBqoddJdPryJpcEieSNcHInnH98BKe8oieGo5xGb8JKtruxnTTkAv7bhXfW3TGfzYqHCFuJZZXXvs1lyByO_-21Ac8vZI5YCpBg'); }
 
-.bg-listing-4 {
-    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDWXOMQQmjig9TQaV5w2l5folyElCQr8bFHaMOMfUEKjNyu1UtEUI4SNlssBFSr4ch-7ZdENp4re6an3FebOue4mDnHj1xzSGpAVbfQyWls5Knf2YtV6_kYUw1xO9are52Inc-mXxEli_jacw_9gBgKd4sQMbiTVqWZefrTNNsoazQtFTpISR1mf-Bq_Y--rhGW1C4mfZ9TlrrAupGFqKtSbP3RS0fSLozdl3EY5ggXN0jdPhoG3qsuO8e8TI2gVCKXT5mLqRbg3A");
-}
+.bg-new-auction-1 { background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCDegAYr_NTxg8JTREM2OJluzgwjZjApFS5yjipLyyJGDqhPEHcEb4thHNiyX-u2FATxBFu7bFdeBU4hoZ2lE6PILyT_CwKZFzO8QE8C-k1gT6SM1OaTEo7w0GU_rfphg7GqNvr_JpNCHkmHc1o0w8VbTKPoyWWAtEXbh0Ts7Df7WKBmYgEwmhH7WqEJQl1_O6ZpDMq9S2yOlBYR0-wQpqLVCayVQGH9n8JMNyHe-LyvfYl0lbIBd9RNTn8xR1GXeDjRj4rW3qFiQ'); }
+.bg-new-auction-2 { background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBe56mY2yieL4Kc7-tfMKpaVXGyuP952nkcIBXiyyw2n8PUz9IYxcVIGnoQW9SxlQQ8I7MqrfGzlC_Mn35Onh2J8HIiD2qEAb_XGf8LdqGhPKFGpM9hpXejGxNWPW5mbRxtgDfQGUcDsAoJlqhLfGzDjKheTPRtp9U94_xVhN3p0IGlyhueWxKRa1qdNJH2prGF3RgNbfKvXv7WGZ3-pfVgANEqtJyVhFtqPAk5agOJaFXJ4QTpUV4Tc7UyQR2Erd_wIDhKJ1hX9g'); }
+.bg-new-auction-3 { background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCOJfv9myDjCUTrjmQBWcf3369mAUNm9Y6Dm0lmWlci-xU3Mxvh1zNhKJH6FGPJvotwCqhd_ngY1PRpyJP7C1KF1WwG8LJcjGO9vhkf0dB4oe-oQ9-_zJl8QG5xYRu4hT3IZp2ZP1ppDlhm2TNfz8YU3TsIzp3FWLgPKpbtepA1Id2jg4JlKhkYzd6EOGPBbO9p2vKGOhPOzjd0hg0QD2Y6CHsiKFROitxhwbUF2cFVJwXzBlXjQP1HSKAhvXKp-Qg8pO6VbipCdQ'); }
 
-.bg-listing-5 {
-    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBDYpIO2YzGuF8BT-nIP3ZSHkoNo0OzdRREr_Ik5IjALpI75D-z0Q3J1TRLN8qiGK3WeJYA6IfCq9rAeo32ouCr4IPGrBNF1paM6Gk7uoYG7YRgFF6e6dzSQy2NPqzLjGefluVKQTRyE1RGikPR86FcPAOfdmdVWpXYbouBE8221uCiroYrOY-H-N-7YTMApkgKoTCsLPZpdf0GX6ZvQ6J_ABGdH_Lw4CI0C0xmwihltK1RmIvElAGJTEE8cikVYp0LRAs3cDV3Vw");
-}
+.bg-bid-main { background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAJfankX1u5YYk1d7pZbsxv8KmCY7ZZjRtQL22MQkqmSh-jR3JJDMYZZMAROUbhIkqtDgWDiQnAnsutfeFu8nW4d99w4RtGrkNrhEkNuAggLBwtorpcOrWndvwIpDuiZuV4NOCJ7EhnEN_zWlFy2V0DSlPUiFa_fn_K94zV5GkwZXUJiHsrttqvxsNkCVqK6dbRqHuhppRbMaXTG-qTyUkdYOwaP_S1HzlAz3KcguWyK0pxk6wwu_zznFxEWWz9OgWpNPnyB-Hc5w"); }
+.bg-bid-next { background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuClBqGo7yn0m88kZU-taO2X6qTIH9L6ZqTBqn-qXVN774PaI0Z1BHfPD4vwUYv9_Afudoadwdpu0mfJ_cprJ9WtxNbV0UQj9hYo-2jIl6YD7IwRgP14hcJfIwzIeKzxYVxMnDrPW0L2P-BIUyI6GAkThOd4QmZPENzEaVNmJYbvTWKsCE9_xGOceq0qBjNdN06VzPzJsKtPwbebTKNYrfeTSNgnhGAI4YwkJfeCBR7ygKX-S7VaoZw6MgmNrU82LHN083b5LsRagg"); }
+
+.bg-payment-card { background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCjhfXPtxmOoBtJkAU3YVx5awn1mf0VIl4u84CIWeSB9AVA0vKwH_WLmfHggDWW0PcKf_fO8ckDIgxoXZtzi_UNb2QO7ep7UjpNU5yBTR6osjEagH14dj7kSC3dOG0YA38sdbxjaXkl49dRG2y1wiwDufIFNqc6dyo__nxe2IOiQs2iak5peFiXdkO7vse0xehOmIRd2D8QHIx7D2Co2UmZVfOw-VCxUSsakkHhfig99nbbEkETsRNTKkdR8TcEe_aUr9uEsLj9lw"); }
+
+.bg-profile-avatar { background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAGRjpc1fv949IXER1k4sJi66PxDme0Mm0pnJaijm-pOh7DjbUUdZzTuHyLLss3B6j9iDw1QhmCgVIzg-_uha2azHJAuuj0vDxwkRm-OvJ-_dBsT3piUo8H3GiWEWEF6-bwDqKW6HkaCcuXm9H4JKABHu9Z-vokAQs7koDlM1TcLrLkpJgBkpNIsWAxCa3hgMNHpastjGTHvj4jwr9VM2inzcZsv50u06ImagXTYjYnYfl9VhcK6Jzw9XJxTDMfxt8x28gXGIbdZA"); }
+
+.bg-listing-1 { background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAHY6gS-RwoB1-2mfc0eZbOpvWqPHzxaVeDpPXGgnkzxkDXoDsXClIFMr5JQXcpG411gBnIFeAckrFaMzwX3rF0cDG8kdwx0UH22gvB3tNJSBjacFs_r_qfqczzyZj4v0EwwgfvBfLlRt-qP8XE4xvdotWXRSn1i9EahH4F0X0K_tWZxn4wQOfIqZd_FF2bGD1-QyWITQXLqhvxm5SHT5YyWdEtlhN7R3umkk2KYVAr0M2nydviIGoFCuT6P0Sn5oLw5-EO1uzpQg"); }
+.bg-listing-2 { background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB2uXt-7CFewbsoD8cfMwj5vD1tD-lGESxTqENOlimjE-vyjsfPW_sh_ygJC57tju1PpktdJxZPEV6Cew9UMVj_bV8iIQrWI5ZHxRH6gUIOwDf-ioCcPQwpJGyJotrFwcHcwbdYqrMtnMRqnYQVlxYMHg5Ds3rg9CPpFPa97ZOACD3niGAqMVzglfvDbwoLZwYvVAy0hMdNRP_ddq-TtpVp0tygFWdOdpONX5lPiO_zEZg5sKxJD18FFxToqrbY19RfXSyF-iZTbA"); }
+.bg-listing-3 { background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC92ji8G94TKm0HGd1LRwloY-8OG3QCxUM_QtLciPGkUKyaAXNxrkvWu3sQfevBVs_ooUcEwX5AOzta11dGoKYVM-ua1brF6WvEydsb82mXWtbG8pMvjS9FLksnzLUXxWov1ESKpWqCL3JskPBiESR4Lt8npt9UtRcj2P94BcD9i_52z3rd2kPbm20VLAg3m8sl61BHUAepx4o3dyK96Agj6yDALcxBBq19Mx1-SUbKF9dRMbs-6UUNSoaZgCiWlXkdyILvkMdDEg"); }
+.bg-listing-4 { background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDWXOMQQmjig9TQaV5w2l5folyElCQr8bFHaMOMfUEKjNyu1UtEUI4SNlssBFSr4ch-7ZdENp4re6an3FebOue4mDnHj1xzSGpAVbfQyWls5Knf2YtV6_kYUw1xO9are52Inc-mXxEli_jacw_9gBgKd4sQMbiTVqWZefrTNNsoazQtFTpISR1mf-Bq_Y--rhGW1C4mfZ9TlrrAupGFqKtSbP3RS0fSLozdl3EY5ggXN0jdPhoG3qsuO8e8TI2gVCKXT5mLqRbg3A"); }
+.bg-listing-5 { background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBDYpIO2YzGuF8BT-nIP3ZSHkoNo0OzdRREr_Ik5IjALpI75D-z0Q3J1TRLN8qiGK3WeJYA6IfCq9rAeo32ouCr4IPGrBNF1paM6Gk7uoYG7YRgFF6e6dzSQy2NPqzLjGefluVKQTRyE1RGikPR86FcPAOfdmdVWpXYbouBE8221uCiroYrOY-H-N-7YTMApkgKoTCsLPZpdf0GX6ZvQ6J_ABGdH_Lw4CI0C0xmwihltK1RmIvElAGJTEE8cikVYp0LRAs3cDV3Vw"); }
